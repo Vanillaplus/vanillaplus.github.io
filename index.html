@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Vanilla Plus Project - Main page</title>
+<link rel="shortcut icon" href="https://i.imgur.com/U57hzVE.png" type="image/png">
+</head>
+	
+<style>
+	type="text/css">
+#content {
+    width: 200px;
+    margin: 0 auto 50px;
+   }
+#footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px;
+    color: d6900f;
+    width: 100%;
+	text-align:center;
+   }
+	
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+}
+#videoBG {
+    position:fixed;
+    z-index: -1;
+    object-fit: fill;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height:100%;
+    }
+    body {
+        background-color: #000000;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:100%;
+        height:auto;
+    }
+    body {
+        background-color: #000000;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('poster.jpg');
+        background-size: cover;
+    }
+}
+	
+.image-center {
+  max-width:25%;
+  max-height:25%;
+  position: absolute;
+  left: 40%;
+  bottom: 40%;
+}
+	
+.image-topleft {
+  max-width:12%;
+  max-height:12%;
+  position: absolute;
+  left: 2%;
+  top: 4%;
+}
+	
+.image-topright {
+  max-width:12%;
+  max-height:12%;
+  position: absolute;
+  right: 2%;
+  top: 4%;
+}
+	
+.image-topright2 {
+  max-width:12%;
+  max-height:12%;
+  position: absolute;
+  right: 2%;
+  top: 19%;
+}
+	
+.image-topright3 {
+  max-width:12%;
+  max-height:12%;
+  position: absolute;
+  right: 2%;
+  top: 34%;
+}
+	
+</style>
+
+<video id="videoBG" poster="poster.JPG" autoplay muted loop>
+    <source src="loginscreen.mp4" type="video/mp4">
+</video>
+
+<div class="image-wrap">
+   <img src="https://i.imgur.com/XZywk1i.png" class="image-center">
+</div>
+
+<div class="image-wrap">
+   <img src="https://i.imgur.com/U57hzVE.png" class="image-topleft" >
+</div>
+
+<p><a href="https://www.reddit.com/r/wowservers/comments/" target="_blank" title="via Reddit">
+<div class="image-wrap">
+   <img src="https://i.imgur.com/bOBCcJS.png" class="image-topright" ></a></p>
+</div>
+
+<p><a href="https://discord.gg/UPf7SRG" target="_blank" title="via Discord">
+<div class="image-wrap">
+   <img src="https://i.imgur.com/eK6H7yC.png" class="image-topright2" ></a></p>
+</div>
+</div>
+
+<p><a href="https://www.patreon.com/VanillaPlus" target="_blank" title="via Patreon">
+<div class="image-wrap">
+   <img src="https://i.imgur.com/W8u2IHb.png" class="image-topright3" ></a></p>
+</div>
+
+
+<div id="footer">
+    This site is not associated with Blizzard Entertainment&copy;.
+	Project is started and supported by fans and has no any commercial interest.  2019
+    
+</div>
